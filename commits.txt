@@ -1,0 +1,300 @@
+1feb705 Fix for cloning issues with msdf-atlas-gen (#617)
+5e20b23 Exposed TextComponent to C#
+be419f6 Added TextComponent with some more text params
+d32b9a2 Rendering text successfully!
+97d3ee3 Generating texture atlas + displaying it in UI
+e404b00 Added msdf-atlas-gen submodule + basic example in Font.cpp
+e4b0493 Fixes + minor features
+bba1220 Fixed release build crash + more
+8b80550 Initial project work
+f8f8e30 More Script Engine cleanup + handling invalid state
+5448f73 Added Buffer and ScopedBuffer classes
+a611994 Added C# debugging support
+44b3535 Pausing and Stepping
+a7d6822 Added file watching for C# app assembly to automatically reload changes
+68f6e3a Added assembly reloading
+52b4752 Added FindEntityByName and Entity.As to retrieve script class instance
+9a5ac21 Serializing script fields
+42e4e0a Storing/copying C# field values to runtime
+1c42ced Retrieving public C# Entity class fields
+9f93e79 Separated "game" scripts into separate Sandbox module
+c7f3972 Lots of scripting work!
+acfaac5 Added Internal Calls + some refactoring
+b22a755 Initial C# Script Engine work
+49da3c1 Updated Example.hazel scene to use textures
+9e4326c Added File->Save (was missing from menu bar, Ctrl+S was present)
+6b75143 Added missing entityID parameter (#518)
+dcdbfe1 Simplify UUID hash specialization (#491)
+611977e Texture and Tiling Factor in SpriteRendererComponent is now serialized
+3159027 Mouse picking now selects through completely transparent texture areas
+497acd0 Hazelnut now uses ApplicationSpecification
+e3ae311 Added ApplicationSpecification along with ability to set working directory
+b14d9aa Changed outline color to orange + made it thicker
+04d2964 Added selected entity outline rendering (#564)
+5fda78b Fixed Vulkan setup script to use an actual version (still requires any 1.3)
+220f424 Implemented platform agnostic GetTime() (#556)
+dc523ee Update the old texture comparison behavior (#551)
+36e88c9 Fixed use of "std::filesystem::relative" in loop (#539)
+3312359 Changed static assert condition (#536)
+d2ced06 Update EditorLayer.cpp (#527)
+b56f5e4 Rearranged #include files (#502)
+4da6076 Refactored AddComponent to use template (#489)
+8fa40c4 Merged in YAML scene parse error (from CloseRange) #366
+6dba23b Merge branch 'master' of https://github.com/TheCherno/Hazel
+3e125c0 Removed unnecessary GLFW_REPEAT check in Input::IsKeyPressed (#406)
+3701bbb Changed KeyPressedEvent repeat count to "isRepeat"
+b7ee3e9 Changed required Vulkan SDK version to 1.3 and removed local debug libs
+215d495 Cherry-picked PR #495 - CopyComponent and CopyComponentIfExists as a variadic template functions
+0385915 Merge remote-tracking branch 'origin/physics'
+0db47f4 Added "Simulate" scene state for to simulate physics world
+68c7700 Upgraded premake and switched to VS 2022
+344acd3 Added physics collider visualization
+ef8c0f0 Added circle colliders
+0d7f161 Added line and rectangle rendering to Renderer2D
+bed43bc Added circle rendering
+816baa3 Scenes can now be copied and properly reset after playing
+0f72a4c Added UUIDs
+c14350a Added Box2D + initial physics work
+f627b9c Fixed typo quaternio -> quaternion in Log.h (#483)
+0f8fa94 Fixed GLM_ENABLE_EXPERIMENTAL not being defined in Log.h (in recent commit)
+26dd166 Setup script now updates git submodules
+3314e83 Merge branch 'content-browser' of https://github.com/TheCherno/Hazel
+bd084fb Stability + bug fixes
+670ce2d Added loging glm vectors, matrix and quaternios (#361)
+cad1429 Update premake5.lua (#455)
+0385c15 Fix typo in readme (#462)
+e590ee9 Added play/stop button to editor
+d2ae501 Changed default texture magnification filter to linear
+50f8603 Fixed TexIndex being interpolated in Texture shader (#464)
+98672fd Turn off static runtime in yaml-cpp submodule (#476)
+99936f6 Added texture drag/drop and tiling factor to Sprite Component
+a673cd0 Added drag/drop to content browser for loading scenes
+74e7ed1 Updated installation instructions in README.md (#446)
+63b23f7 Updated premake post build to work with white spaces (#449)
+04ad1c8 Added post-build commands for copying Vulkan .dlls to output directory (#437)
+d9552e2 Fixes for fresh checkout compiles and both Hazelnut and Sandbox apps run (#454)
+c184dd2 Content Browser panel thumbnail layout
+ff3a601 Start of Content Browser panel
+2210e89 Add python scripts to install Premake rather than storing the exe on github (#441)
+1747dce Removed debug non-working URL from URL list (#447)
+d39b736 Removed unnecessary header file (#436)
+2b3e25a Removed 'm_Time' in 'ImGuiLayer.cpp'. (#432)
+2b5ab71 Setup script reworked (#438)
+93eef73 New shader system, added Python scripts for retrieving dependencies, added uniform buffers, added command line args, and better premake scripts
+e9b6488 Merge branch 'mouse-picking'
+eb8f67e Left-click in the viewport to select entities!
+7d0ccc4 Fixed wrong viewport bounds when viewport tab bar is visible (#419)
+59887aa Added mouse picking and extended Renderer2D API to accept entity IDs
+a16f605 Added missing 'SetFloat2' in Renderer for completeness (#407)
+3f523d3 Fixed OpenGLVertexArray for integer attributes (#379)
+0613d44 Fix ImGuizmo crash when changing type while operating it (#400)
+a0ea5bd Added Framebuffer API to clear texture attachments
+2852b07 Added GL_RED_INTEGER as a framebuffer format + test
+9089f40 Updated EditorLayer with Framebuffer API changes
+75aecb2 Refactored framebuffers to allow for MRTs
+9749d0c Removed redundant include in WindowsPlatformUtils.cpp file (#389)
+3622480 Fixed Math function declaration (#388)
+30fe1c5 Fixed Z-Fighting bug in Texture Shader (#362)
+a8a656f Changed std::unique_ptr to Scope in Application.h (#376)
+3413333 File dialogs start from current working directory (#374)
+96c57da Added Editor Camera
+b833c1b Added gizmos
+5f9c132 Prevent crash when user adds a component that is already present (#359)
+2910350 Change strcpy_s to std::strncpy to comply with cpp standards  (#346)
+bd860d0 Use YAML::LoadFile to load scene files (#358)
+eb71b44 Change to FileDialogs' methods so that they return std::optional. (#363)
+62786b8 Added default extension string when saving a scene (#355)
+a014633 Added New, Open, and Save As file menu options to Hazelnut + Win32 open/save file dialogs
+398e413 Added SceneSerializer class and basic example
+aab43e6 New Hazelnut theme!
+7335931 Added UI to add/remove entities and components + fixed camera bug when added during runtime
+a490b97 Transform component now stores translation rotation scale instead of transform matrix + added ~beautiful~ transform component UI!
+93d2d2c Multiple small improvements (#322)
+76fa0c8 Fix that Event::Handled could be set back to false (#343)
+b7d17bf Fixed imgui.ini (#348)
+0ee7476 Make FlushAndReset() not call EndScene() (#344)
+93af298 Replace filename extraction with equivalent standard library function (#347)
+5bf588c Added Sprite Renderer Component UI + merged incoming changes
+b538e7c Allow assert macro to take no arguments and fix Log.h include shenanigans (#306)
+6a6a925 Fixed two includes to fit the convention (#324)
+8bc51bb Removed redundant mainCamera->GetProjection() in Scene::OnUpdate(...) (#321)
+1a4b9bf Hide compiler warnings from spdlog (#341)
+fbdecd7 Added section about the roadmap to the README (#290)
+fbe586f Add EventCategoryMouseButton to MouseButtonEvent (#328)
+c475679 Fix inconsistent variable names in Camera GUI and consistent function ordering (#333)
+c4c6611 Added Camera Component UI to Properties panel
+1a57c85 Added Properties panel
+857d8d6 Added Scene Hierarchy panel
+daf0781 Merge branch 'master' of https://github.com/TheCherno/Hazel
+a546856 Changed ScriptableEntity functions to be virtual
+0090b94 Community maintenance (#320)
+3177aca Added initial native scripting support
+8a81a7e Added SceneCamera + camera resizing support
+7ee0fde Added camera component and moved 2D rendering to Scene class
+120df0f Fixed invalid entt::entity equal entt::null, which is not equal to 0 (#285)
+9f8f196 replaced std::bind in HZ_BIND_EVENT_FN macro (#277)
+3af25fd Fixed memory leak and malformed JSON in Instrumentor (#283)
+82ccfd2 Fixed error when adding different timers to a single scope (#280)
+5658efc Added Entity class and TagComponent
+72bc16e Renderer2D consolidate DrawRotatedQaud functions (#281)
+5aff96f Merge remote-tracking branch 'origin/master'
+c8a8651 The start of our ECS journey!
+3d3537d Fix Hazelnut's black flicker when resize the viewport (#268)
+ffb53e9 Updated imgui.ini for Hazelnut
+23e113d ImGui events are now blocked/not blocked properly depending on viewport focus/hover
+b50681d Refactored Input "situation"
+c853066 Followup of #254, added texture branch to Hazelnut
+d2557b0 Adding virtual destructor on Framebuffer (#270)
+575ff7f Added missing texture branch (#254)
+325494b Fixed wrong session name for shutdown profile session (#251)
+ba13c6d Renamed Hazel Editor to Hazelnut, created viewport panel for scene
+9ddc334 Moved Hazel Editor into separate project
+cc54dbe Added basic Framebuffer class
+7895700 Initial dockspace work (enable in Sandbox2D.cpp:70)
+cfc4182 Rename Hazel/Core/Core.h to Hazel/Core/Base.h (#246)
+18abce3 Branching instead of indexing the texture sampler (#247)
+5389cf6 Fixed rendering an empty Renderer2D scene (#226)
+1f4694e Optimization in Instrumentor.h (#240)
+7fa5950 Imgui handling mouse and keyboards events (#219)
+017ab22 Fixed Renderer2D did not use tintcolor argument (#234)
+021bab9 delete Renderer2D s_Data.QuadVertexBufferBase on shutdown (#230)
+48269a5 Updating submodules from origin (#232)
+dc7c9a0 Fixed warning in Renderer2D (#224)
+6a93423 Fixed incorrect cases in BufferElement::GetComponentCount (#223)
+138a3de Added VS files to .gitignore in ImGui submodule (#228)
+3d5068b Could not render more than Renderer2DData::MaxTextureSlots different textures (#218)
+b6669e1 Replace Renderer2DData::QuadVertexBuffer setup code with a for loop. (#210)
+c90d701 Fixed IndexCount selection in OpenGLRendererAPI::DrawIndexed (#217)
+0fce004 General cleanup (#212)
+6d9d378 Fixed the ImGui-controlled square color (#213)
+eb3f705 Renderer2D: added draw call splitting and stats
+3e98d9f Renderer2D can now render rotated quads in batches + we now use transforms
+76dcfca Removed redundant 'inline' keyword usage. (#159)
+5e94d7d Add comment to OpenGL buffer creation (#207)
+c95e30a Fixes #209 typo in logging message in WindowsWindow::Init()
+9ff171d Added textures to batch renderer
+824104c Added basic batching to Renderer2D
+3ffe9d2 Updated Sandbox2D
+681c72f Renderer2D API improvements
+f823e2e Log messages are now additionally sent to Hazel.log file
+0716731 Fixed Instrumentor generating same start time (#185)
+9095bed make runloop only accessible on the engine side (#188)
+554fb3f compile time check of window type and input type (#190)
+3531a50 Instrumentation fixes (#179)
+a15917c Implement KeyCodes and MouseCodes enums (#124)
+8c3cc55 Logging OpenGL messages (#114)
+9b56f9c Auto deducing an availabe __FUNCSIG__ definition (#174)
+7e97921 Updated the contribution guidelines (#180)
+ed86c74 Merge branch 'master' of https://github.com/TheCherno/Hazel
+749b665 x64 architecture parameter fix
+be33737 Missing iterator wrappers in LayerStack.h
+a957b5b Move Sandbox ExampleLayer to separate file
+37849a3 Instrumentation pass over entire codebase
+95fda7f Initial instrumentation work
+f6d5c00 Merge branch 'master' of https://github.com/TheCherno/Hazel
+fdafade Added timer to Sandbox for basic profiling demo
+6e84e8d Added file reading check
+ccccfdc Code maintenance (#165)
+8c35857 Renderer2D now uses a single shader to render both textured and non-textured quads
+6791c41 Added transforms and textures to Renderer2D
+0f58367 Made Win-GenProjects.bat work from every directory
+5edf68f Fix Build warnings to do with BufferElement Offset Type
+3266b54 Fix PR template(s) where not showing
+c041819 Basic ref-counting system to terminate glfw
+60cf553 Started work on 2D renderer
+7646edf Created Sandbox2D layer for testing upcoming 2D rendering
+bee34b9 Use 'Scope's instead of raw pointers (mem leak)
+32c0f56 Fixes for OrthographicCameraController Movement
+14c3065 Added check for OpenGL version
+4e0a190 Fixed edge case in OpenGLShader::PreProcess Logic
+033af46 Automated platform detection using predefined macro's
+52ff54c Fixing bug when trying to update submodules
+a3ca612 Call the layer's OnDetach before deleting it
+5509204 Delete the shaders after the shader program creation
+fb841f8 Remove unnecessary token-pasting operator in EVENT_CLASS_TYPE (#113)
+2b6ac38 Added the required YAML front matter to templates
+91be98d Added templates for (future) issues and pull requests
+8174f72 Adding VS files to gitignore
+b62acd9 Upgrade to VS 2019 + Organization
+2b37c04 Added proper window resize handling
+734ea18 Updated GLFW and imgui submodules
+0e03475 Added orthographic camera controller
+f50af96 Updated readme and added logo
+b576fd9 Added ShaderLibrary + misc fixes
+7d120fb Shaders can now be read from files
+30b5c24 Avoid using std::function in event dispatcher for performance
+9cbad6e Made Input a true singleton
+e8b2ad9 Change bind target inside OpenGLIndexBuffer constructor
+670e86f Adding flag for MultiProcessor Compilation in Premake
+24fb3bb Updated GLFW submodule.
+070571c  Smoother project generation (#83)
+10b4a3e Added support for blending, and loading both RGB and RGBA textures
+783d256 Fix warning casting size_t to uint32_t in OpenGLVertexArray
+49c5266 OpenGLVertexArray not adding multible VertexBuffers correctly
+f52b813 Fixed a bug in LayerStack which would occur if passing an overlay or a non-existent layer in to PopLayer. (#93)
+15c30d9 Fixed that single warning... (#92)
+72061ff Added initial texture support and refactored smart pointers to Hazel types
+6340cea Added Hazel::Scope and Hazel::Ref definitions
+3c14780 Moved OpenGL shader implementation to OpenGLShader class + added more uniform functions
+888b3e8 Added missing Timestep.h file.
+3352191 Added transforms to Renderer.
+a54b074 Added Timestep and moved sandbox code to Sandbox
+5dc2ee1 rename m_SceneData to s_SceneData (#79)
+c1d915e Added orthographic camera.
+dc9e382 Added RendererAPI and RenderCommand architecture.
+982dcdf Added a missing semicolon (#72)
+9b75670 LayerStack only need to search for the layer to be pop in its correspond location (#33)
+cfe95cb Merge pull request #49 from gold604/master
+1adc9bc Merge branch 'master' into master
+1633bb5 Merge pull request #1 from LovelySanta/patch-1
+d8780e4 OnDetach must be called before removing from stack
+7b06701 Merge pull request #65 from AMS21/fix-38
+d5f6894 Merge pull request #62 from sidmostefaoui/patch-1
+4d818ed Merge pull request #1 from LovelySanta/patch-2
+1432544 Changed macro name
+0d292a3 Added vertex array support.
+e8eef16 Added buffer layout descriptors for vertex buffers.
+5221983 Added missing premake binaries.
+5c0d0b0 Revert 'Sandbox/imgui.ini'
+0218724 Using default destructors over empty ones #38
+6481707 Merge pull request #42 from Dragon9815/master
+c81f262 Removed solution, project files and imgui config
+7677da4 Added OpenGL buffer abstraction.
+59628cc fixed wrong spdlog api call
+76ae3b8 Our first shader.
+f3e38fe Merge pull request #19 from SeppahBaws/master
+e7b5157 Our first triangle!
+ccc8a5d Stopped tracking imgui.ini
+55fc439 Added OpenGL context class.
+440d937 Hazel now builds as a static library + fixed warnings.
+375f945 Layer's OnAttach and OnDetach methods are now called inside LayerStack
+7c02b78 Switched imgui to docking branch, using their GLFW/OpenGL implementation now.
+15cddb1 Added glm.
+6a5e688 Added Hazel key and mouse codes.
+e1bb18d Added input polling.
+7bf5499 Updated projects.
+e0a1eec Merge pull request #22 from Husamdababneh/master
+7ac370a Update premake5.lua
+e0d93f2 Merge branch 'master' into master
+4edebec Merge branch 'master' into master
+70e959e Fixed premake startproject.
+4ce9394 Merge branch 'master' of https://github.com/thecherno/hazel
+f67f96a We now linking runtime library dynamically; defined HZ_ENABLE_ASSERTS if HZ_DEBUG is on.
+e1f76df Merge pull request #17 from AleksandarSherbula/premake
+7bb1d50 Postbuild command for Hazel project modified
+c085bb9 Grouped dependencies
+709b40d Added events to ImGui layer.
+cb391d0 Start Project
+c65520c Added ImGui and basic ImGui layer.
+3a352ac Added Glad.
+5bd8093 Added layers and layer stack.
+30516ad Dispatching events from GLFW.
+6815f07 Added Window class and GLFW.
+cfd270f Added pch include to Events.h to fix compile errors.
+f3c310e Added precompiled headers.
+34df416 Added event system + basic test.
+fabfa7f Added premake and generated projects.
+6e6b25e Added spdlog submodule.
+72e7f8f Added spdlog and basic logging API/macros.
+f9fbbd2 Setup basic Application and Entry Point.
+9d8c011 Initial commit
